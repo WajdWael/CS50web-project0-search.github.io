@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--== Google fonts ==-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!--== Css file ==-->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--== Font awesome  ==-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+    <!-- navBar -->
+    <nav class="links">
+        <div class="content">
+            <a href="./index.html">Google Search</a>
+            <a href="./advanced.html">Advanced Search</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Google-Logo -->
+        <header class="img-container">
+            <div class="con">
+                <img src="./imgs/google-logo.png" alt="google-logo">
+                <span id="img-span">images</span>
+            </div>
+        </header>
+        
+        <!-- searchBar -->
+        <form action="https://google.com/search" class="form" role="search" name="f">
+            <div class="input-box">
+                <i class="fas fa-search"></i>
+                <input type="hidden" value="isch" name="tbm" />
+                <input name="q" type="text" role="combobox"  title="Search" value="" aria-label="Search" />
+            </div>
+            <div class="btns">
+                <input type="submit" name="q" value="Google Images Search" />
+            </div>
+        </form>
+
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,247 @@
+/*== Basic styles ==*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*== Main styles ==*/
+nav.links {
+  display: flex;
+  justify-content: right;
+  padding: 0.5rem;
+  margin-right: 24rem;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 57px;
+  height: 100%;
+  min-width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.img-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  min-height: 150px;
+  height: 180px;
+}
+
+.img-container img {
+  max-width: 100%;
+  width: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.con {
+  flex-direction: column;
+  max-height: 98px;
+  display: flex;
+  height: 100%;
+  position: relative;
+  justify-content: end;
+}
+
+.form {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  color: rgb(95, 99, 104);
+  font-size: 13px;
+}
+
+/* Inputs-Styles */
+input[type="text"]:not(.ad_input) {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.input-box {
+  max-width: 561px;
+  width: 100%;
+  display: flex;
+  border-radius: 35px;
+  border: 1px solid #dfe1e5;
+  background-color: #fff;
+  height: 44px;
+  max-height: 100%;
+  position: relative;
+  border-radius: 42px;
+  margin-top: 6px;
+}
+
+.input-box:hover {
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 27%);
+}
+
+input[type="submit"] {
+  text-align: center;
+  line-height: 37px;
+  border: 1px solid #f8f9fa;
+  margin: 11px 4px;
+  padding: 0px 17px;
+  height: 37px;
+  color: #3c4043;
+  border-radius: 5px;
+  min-width: 57px;
+  font-size: 14px;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+input[type="submit"]:not(.ad_btn):hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+/* End of Inputs-Styles */
+
+.btns {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  height: 50px;
+  width: 100%;
+}
+
+/*== image-page style ==*/
+.content {
+  display: flex;
+  justify-content: end;
+  margin-right: 8rem;
+  margin-top: 0.85rem;
+}
+
+.content a {
+  padding-right: 20px;
+}
+
+#img-span {
+  color: #4285f4;
+  position: absolute;
+  left: 79%;
+  bottom: 0;
+  white-space: nowrap;
+}
+
+/*== advanced style ==*/
+.ad_nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 39px;
+  align-items: center;
+}
+.ad_nav a {
+  text-decoration: none;
+}
+.ad_right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 2rem;
+}
+.ad_right img {
+  width: 90px;
+  object-fit: contain;
+}
+.ad_header {
+  margin: 25px 35px;
+  font-size: 20px;
+}
+.ad_header h3 {
+  color: #d93025;
+  margin-left: 10px;
+}
+.line {
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+}
+#ad_body {
+  padding: 10px;
+  max-width: 1140px;
+  min-width: 200px;
+  width: 96%;
+  margin: 40px 45px 0 2%;
+}
+.ad_all {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 200px;
+  margin-top: 19px;
+  flex-direction: column;
+}
+.ad_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.ad_input {
+  width: 100%;
+  border: 1px solid #bebebe;
+  outline: none;
+  padding: 1px 8px;
+  height: 30px;
+}
+.ad_input:focus {
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+.ad_flex label {
+  display: inline-block;
+  min-width: 167px;
+  width: 21%;
+  height: 42px;
+  color: #222;
+  font-size: 13px;
+  line-height: 42px;
+  vertical-align: middle;
+}
+.ad_cont_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+input.ad_btn {
+  background-color: #4d90fe;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+.ad_btn:hover {
+  background-color: #357ae8;
+  border: 1px solid #2f5bb7;
+}

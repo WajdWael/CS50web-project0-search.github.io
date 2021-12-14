@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--== Google fonts ==-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!--== Css file ==-->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--== Font awesome  ==-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+
+        <!-- Logo -->
+        <nav class="ad_nav">
+            <div class="ad_right">
+                <a href="./index.html">
+                    <img src="./imgs/google-logo.png" alt="google-logo" />
+                </a>
+            </div>
+            <div class="title">
+                <a href="./index.html">Back To Google</a>
+            </div>
+        </nav>
+
+        <!-- heading -->
+        <header class="ad_header">
+            <h3>Advanced Search</h3>
+        </header>
+
+        <div class="line"></div>
+
+        <section id="ad_body">
+            <!-- Titles -->
+            <span>Find pages with...</span>
+            <form action="https://google.com/search">
+                <!-- Inputs-container -->
+                <div class="ad_all">
+                    <!-- input1 -->
+                    <div class="ad_flex">
+                        <label>all these words:</label>
+                        <input type="text" class="ad_input" name="as_q" />
+                    </div>
+                    <!-- input2 -->
+                    <div class="ad_flex">
+                        <label>this exact word or phrase:</label>
+                        <input type="text" class="ad_input" name="as_epq" />
+                    </div>
+                    <!-- input3 -->
+                    <div class="ad_flex">
+                        <label>any of these words:</label>
+                        <input type="text" class="ad_input" name="as_oq" />
+                    </div>
+                    <!-- input4 -->
+                    <div class="ad_flex">
+                        <label>none of these words:</label>
+                        <input type="text" class="ad_input" name="as_eq" />
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="ad_cont_btn">
+                    <input value="Advanced Search" class="ad_btn" type="submit">
+                </div>
+            </form>
+        </section>
+
+    </body>
+</html>
